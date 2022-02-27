@@ -377,4 +377,4 @@ model_ev = pd.DataFrame({'Model': ['Logistic Regression','Naive Bayes','Random F
                     nb_acc_score*100,rf_acc_score*100,xgb_acc_score*100,knn_acc_score*100,dt_acc_score*100,svc_acc_score*100, sgdc_acc_score*100, mlpc_acc_score*100]})
 #%%
 model_ev.sort_values(by='Accuracy', ascending=False)
-# %%
+
