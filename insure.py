@@ -373,8 +373,7 @@ print("Accuracy of : MLP Classifier{:.2f}%".format(mlpc_acc_score*100,'\n'))
 print("-------------------------------------------")
 print(classification_report(y_test,mlpc_predicted))
 # %%
-model_ev = pd.DataFrame({'Model': ['Logistic Regression','Naive Bayes','Random Forest','Extreme Gradient Boost','K-Nearest Neighbour','Decision Tree','Support Vector Machine', 'Stochastic Gradient Descent', 'Neural Nets'], 'Accuracy': [lr_acc_score*100,
-                    nb_acc_score*100,rf_acc_score*100,xgb_acc_score*100,knn_acc_score*100,dt_acc_score*100,svc_acc_score*100, sgdc_acc_score*100, mlpc_acc_score*100]})
+model_ev = pd.DataFrame({'Model': ['Logistic Regression','Naive Bayes','Random Forest','Extreme Gradient Boost','K-Nearest Neighbour','Decision Tree','Support Vector Machine', 'Stochastic Gradient Descent', 'Neural Nets'], 'Accuracy': [round((lr_acc_score*100), 2),
+                    round((nb_acc_score*100), 2),round((rf_acc_score*100), 2),round((xgb_acc_score*100), 2),round((knn_acc_score*100), 2),round((dt_acc_score*100), 2),round((svc_acc_score*100), 2), round((sgdc_acc_score*100),2), round((mlpc_acc_score*100), 2)]})
 #%%
 model_ev.sort_values(by='Accuracy', ascending=False)
-
