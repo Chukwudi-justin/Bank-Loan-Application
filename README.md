@@ -153,7 +153,7 @@ After building each model using the data set, the model accuracy for each was co
 
 ![Model_accuracy](ModelTable.jpg)
 
-##CONCLUSION
+## CONCLUSION
 In general, it can be obsereved that all models can achieve up to **70%** accuracy. The highest accuracy is **91%** from the **Random Forest Model**.
 
 
