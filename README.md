@@ -84,10 +84,10 @@ Most applicant opted for 360 days duration.
 
 #Distribution of numerical values in data set
 ![Applicants_Income](Aplincom.png).
-This is clearly left skewed and not well distributed.\
+This is clearly left skewed and not well distributed.
 
 ![C0-applicants_Income](Coaplincom.png)
-This is clearly left skewed and not well distributed.\
+This is clearly left skewed and not well distributed.
 
 ![Loan_Amount](Loamount.png)
 Slightly a better distribution though not the best.
@@ -113,5 +113,45 @@ there is a slight positive correlation between applicants income and amount of l
 ![Loan vs applicant_status](amountvsloanstat.png)
 
 The amount of loan requested by customers does not influence thier application status.
+
+## DATA PROCESSING
+To clean up the data and prepare it for model building.\
+I obtained the summary of missing values in each column of the data set using the python code. **df.isnull().sum()**.\
+
+![Missing_values](missing.jpg)
+We noticed that some values from some features are missing, this might likely be a case of customers leaving it blank while filling out thier information.\
+
+To help clean up this, I replaced the missing values in the categorical variable using their mode. i.e the most frequent in that column while replacing the numerical variable using the average value of the column.\
+
+I also dropped columns that was not so relevant in building our model, I dropped "Loan_ID".\
+
+I also transformed all categorical variable with **string values** into a form that is allowed by models for our machine algorithm to make better prediction.\
+This process is called **One-Hot Encoding** using the pandas library **df.get_dummies().\
+
+The outliers earlier experienced in the numerical variables were removed.\
+
+The skewness that was earlier experienced in distribution for ApplicantIncome, CoapplicantIncome, and LoanAmount was transformed.\
+I used square root transformation to normalized the distribution using the numpy library.
+
+## Normalized Distribution of Numerical Variables
+![applicant_inc](Newincom.png)
+
+![Coapplicat](NewCoapp.png)
+
+![LoanAMA](NewLoanamt.png)
+
+This Distribution can clearly be observed as being better than the one previously observed.
+
+**Loan_Status** clearly is the target variable while every other features is taken as the independent variable.\
+The train_test feature of sci-kit Learn was used to split the data set into 80% for training each of the model while 20% was used to test the model.
+
+After building each model using the data set, the model accuracy for each was computed and arranged to provide information on models that performed well and a best fit for the bank automation plan.
+
+### MODEL ACCURACY TABLE
+
+![Model_accuracy](ModelTable.jpg)
+
+##CONCLUSION
+In general, it can be obsereved that all models can achieve up to **70%** accuracy. The highest accuracy is **91%** from the **Random Forest Model**.
 
 
