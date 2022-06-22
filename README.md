@@ -99,7 +99,7 @@ Slightly a better distribution though not the best.
 
 ![Property Area vs Credit History](PropAreavsCredit.png)
 
-![Property Area vs Loan Status](PropareavsLoanStat.png)
+![Property Area vs Loan Status](AreaVSloan.png)
 
 ![Loan_status vs Marital Status](MarryvsLoanstat.png)
 
