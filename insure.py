@@ -156,7 +156,7 @@ plt.xticks(rotation=0)
 plt.show()
 # %%
 #Property Area vs Loan Status
-pd.crosstab(df.Property_Area,df.Loan_Status).plot(kind="bar", stacked=True, figsize=(5,5), color=['#333333','#dd1818'])
+pd.crosstab(df.Property_Area,df.Loan_Status).plot(kind="bar", stacked=True, figsize=(5,5), color=['#CD0000','#308014'])
 plt.title('Property Area vs Loan Status')
 plt.xlabel('Property Area')
 plt.ylabel('Frequency')
