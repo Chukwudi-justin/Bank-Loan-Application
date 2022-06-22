@@ -1,6 +1,6 @@
 # Bank-Loan-Application
 ### INTRODUCTION
-![Loan-Image](intro.jpg).
+![Loan-Image](intro.jpg)
 This Bank seeks to automate (in real time) the loan qualifying procedure based on information given by customers while filling out an online application form.\
 It is expected that the development of machine learning models that can help the company predict loan approval in accelerating decision-making process for determining whether an applicant is eligible for a loan or not.
 The Data Set was Obtained from kaggle data sets.
@@ -48,44 +48,44 @@ Here is a list of the features in this dataset:
 ## Gender 
 ![Gender](GendDist.png).
 
-![Gender](GendCount.png).
+![Gender](GendCount.png)
 
 There were more male applicants than female while 2.1% of applicants didn't specify gender.
 
 ## Marrital Status
-![Marrital_STatus](MarrDist.png).
+![Marrital_STatus](MarrDist.png)
 64.8% of applicants were married while 0.5% of applicants didn't indicate their marital status.
 
 ## Education
-![Educational_STatus](Educa.png).
+![Educational_STatus](Educa.png)
 There were clearly more educated applicants than the uneducated.
 
 ## property Area
-![Property_Location](Propty.png).
+![Property_Location](Propty.png)
 Most applicant properties were located at semiurban.
 
 ## Loan Status
-![Loan_Status](LoStat.png).
+![Loan_Status](LoStat.png)
 From the data set we can infer that most applicants got their loan request approved.
 
 ## Dependents
-![How Many depend on_applicant](Depend.png).
+![How Many depend on_applicant](Depend.png)
 Most applicants had no dependant.
 
 ## Self Employed or Employee/Others
-![Employment_Status](Employ.png).
+![Employment_Status](Employ.png)
 Most applicant were not self employed.
 
 ## Credit History
-![Credit_History](Credit.png).
+![Credit_History](Credit.png)
 Most applicant had good credit history, while 8.1% did not supply thier credit history.
 
 ## Loan Duartion
-![Duration_of_Loan](Duration.png).
+![Duration_of_Loan](Duration.png)
 Most applicant opted for 360 days duration.
 
 ## Distribution of numerical values in data set
-![Applicants_Income](Aplincom.png).
+![Applicants_Income](Aplincom.png)
 This is clearly left skewed and not well distributed.
 
 ![C0-applicants_Income](Coaplincom.png)
